@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-wechat-timeline-share" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>WechatTimelineShare</name>
+    <js-module name="WechatTimelineShare" src="www/WechatTimelineShare.js">
+        <clobbers target="WechatTimelineShare" />
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="WechatTimelineShare">
+                <param name="ios-package" value="WechatTimelineShare" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/SharedItem.h" />
+        <source-file src="src/ios/SharedItem.m" />
+        <header-file src="src/ios/WechatTimelineShareViewController.h" />
+        <source-file src="src/ios/WechatTimelineShare.m" />
+    </platform>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="WechatTimelineShare">
+                <param name="android-package" value="cordovawechattimelineshare.WechatTimelineShare" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+
+        </config-file>
+        <source-file src="src/android/WechatTimelineShare.java" target-dir="src/cordovawechattimelineshare/WechatTimelineShare" />
+        <source-file src="src/android/ShareUtils.java" target-dir="src/cordovawechattimelineshare/ShareUtils" />
+    </platform>
+</plugin>
