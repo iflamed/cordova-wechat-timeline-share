@@ -26,7 +26,10 @@ WechatTimelineShare.shareTimeline(
 ```javascript
 // when use it with android app, the paths should be absolute path
 
-var paths = ['/storage/emulated/0/Pictures/wechattimelineshare1.jpeg','/storage/emulated/0/Pictures/wechattimelineshare0.jpeg']
+var paths = [
+    '/storage/emulated/0/Pictures/wechattimelineshare1.jpeg',
+    '/storage/emulated/0/Pictures/wechattimelineshare0.jpeg'
+]
 
 WechatTimelineShare.shareTimeline(
     {
