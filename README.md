@@ -4,7 +4,9 @@
 
 # iOS如何调用分享
 
-```javscript
+```javascript
+// when use it with ios app, the paths should be base64 data url
+
 var paths = ['base64 image data', 'base64 image data'];
 WechatTimelineShare.shareTimeline(
     {
