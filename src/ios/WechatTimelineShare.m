@@ -36,7 +36,7 @@
     NSMutableArray *array = [[NSMutableArray alloc]init];
     // trick to remove the icloud photo share extension
     [array addObject: @""];
-    for (int i = 0; i <2; i++) {
+    for (int i = 0; i < array_photo.count; i++) {
         NSString *URL = array_photo[i];
         NSData * data = [NSData dataWithContentsOfURL:[NSURL URLWithString:URL]];
         UIImage *imagerang = [UIImage imageWithData:data];
